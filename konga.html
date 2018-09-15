@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>static page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="konga.css"/>
+    <script src=""></script>
+    <style>
+        body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+.navbar1{
+    background-color: transparent;
+    font-size: 12px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 60px;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: left;
+}
+
+.header {
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+}
+a:first-child {
+    color: black;
+}
+.header a:hover {
+    color: orange
+}
+.container {
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.login{
+    color: deeppink;
+    border: 1px solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: white;
+    border-radius: 2px;
+    font-weight: bold;   
+}
+.logo{
+    width: 200px;
+    height: 60px;
+}
+.container1{
+    padding-left: 100px;
+    padding-right: 85px;
+    padding-bottom:  40px;
+}
+#search{    
+    width: 43%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 159px; 
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+#search_button{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 639px; 
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: white;
+    font-weight: bold;
+}
+.icon{
+    color: black;
+    text-decoration: none;
+    float: right;
+    padding-top: 40px;
+}
+i{
+    font-size: 26px;
+}
+#icon:hover{
+    color: orange;
+}
+.navbar2{
+    background-color: deeppink;
+    padding: 15px;
+    padding-left: 45px;    
+}
+.items{
+    display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+}
+#items{
+    color: white;
+}
+.section{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color: whitesmoke;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <nav class="navbar1">
+                <div class="container">
+                    <ul>
+                        <li class="header"><a href="#">Bulk purchase |</a></li>
+                        <li class="header"><a href="#">Konga stall locator |</a></li>
+                        <li class="header"><a href="#">0700700000</a></li>    
+                        <li class="header" style="float:right;">
+                            <a href="#">
+                                <button class="login">
+                                    <span style="color:deeppink"><small>Log in</small></span>
+                                </button>
+                            </a>
+                        </li>
+                        <li class="header" style="float:right;"><a href="#">Sign Up |</a></li>
+                        <li class="header" style="float:right;"><a href="#">Sell on Konga |</a></li>
+                        <li class="header" style="float:right;"><a href="#">Return policy |</a></li>
+                        <li class="header" style="float:right;"><a href="#">FAQ |</a></li>
+                        <li class="header" style="float:right;"><a href="#">Contact us |</a></li>
+                    </ul>      
+                </div>
+            </nav>
+            <div class="container1">
+                <a href="#" >
+                    <img src="konga.png" class="logo" style="margin-top:25px;">
+                </a>
+                <input type="text" id="search" placeholder="search for product, category or brand">
+                <button id="search_button"><span style="color:deeppink">Search</span></button>
+                <div class="icon">
+                    <i class="glyphicon glyphicon-heart-empty"></i><span id="icon">Liked items</span>
+                    <i class="material-icons">shopping_cart</i><span id="icon">Cart</span>    
+                </div>
+            </div>
+            <nav>
+                <ul class="navbar2">
+                    <li class="items"><a href="" id="items">Phones & Tablets</a></li>
+                    <li class="items"><a href="#" id="items">Computers & Accessories</a></li>
+                    <li class="items"><a href="#" id="items">Electronics</a></li>
+                    <li class="items"><a href="#" id="items">Fashion</a></li>
+                    <li class="items"><a href="#" id="items">Home & Kitchen</a></li>
+                    <li class="items"><a href="#" id="items">Baby, Kids & Toys</a></li>
+                    <li class="items"><a href="#" id="items">Wines & Other Categories</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <section class="section">
+        <div style="float:left">
+            <img src="image2.jpg" style="width:60%">
+        </div>
+        <div style="vertical-align:right">
+            <img src="image4.jpg" style="width:30%; float:right">
+            <img src="image1.jpg" style="width:30%; float:right">
+            <img src="image3.jpg" style="width:20%; float:right">
+        </div>
+    </section>
+    
+</body>
+</html>
